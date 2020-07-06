@@ -1,0 +1,39 @@
+.pp-section{
+    background-color: #f2f7fd;
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    height: auto;
+    padding: 60px 0;
+}
+.pp-section.white{
+    background-color: #fff;
+}
+.pp-section img{
+    width: 100%;
+}
+.pp-terms-section{
+    overflow: hidden;
+    position: relative;
+}
+.pp-terms-section p{
+    line-height: 1.86;
+}
+.pp-terms-section ol{
+    padding-left: 15px;
+    margin: 0;
+}
+.pp-terms-section ol li{
+    margin-bottom: 5px;
+    line-height: 1.86;
+
+}
+.pp-terms-section::after{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.27), #fff 31%);
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+}
