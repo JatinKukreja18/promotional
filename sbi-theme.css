@@ -2,7 +2,7 @@
 /*  This is theme stylesheet for SBI */
 /*  All the SBI components are maintained here */
 
-
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Correct the line height in all browsers.
@@ -512,9 +512,36 @@
   }
   
   .sbi-heading {
-    font-size: 22px;
+    /* font-size: 22px; */
     font-weight: 600;
     color: #2d2d2d;
+    margin-top: 0;
+  }
+  .sbi-heading.bold{
+    font-weight: 700;
+  }
+  h1.sbi-heading{
+    font-size: 24px;
+  }
+  
+  h2.sbi-heading{
+    font-size: 20px;
+  }
+  
+  h3.sbi-heading{
+    font-size: 18px;
+  }
+  
+  h4.sbi-heading{
+    font-size: 16px;
+  }
+  
+  h5.sbi-heading{
+    font-size: 14px;
+  }
+  
+  h6.sbi-heading{
+    font-size: 10px;
   }
   .sbi-heading.sbi-heading-md {
     font-size: 18px;
@@ -522,7 +549,9 @@
   .sbi-heading.sbi-heading-sm {
     font-size: 16px;
   }
-  
+  .sbi-heading.gray{
+    color: #8a8a96;
+  }
   .sbi-subheading {
     font-size: 14px;
     font-weight: 600;
@@ -537,15 +566,20 @@
   .sbi-subtext.black {
     color: #2d2d2d;
   }
-  
+  .sbi-tiny-text{
+    font: 400 8px "Open Sans", sans-serif;
+  }
   .sbi-small-text {
     font: 400 10px "Open Sans", sans-serif;
   }
   
   .sbi-text {
     font-size: 14px;
+    margin-top: 0;
     color: #2d2d2d;
   }
+  .sbi-small-text.gray,
+  .sbi-tiny-text.gray,
   .sbi-text.gray {
     color: #8a8a96;
   }
@@ -585,9 +619,9 @@
     /* 2 */
     margin-right: auto;
     /* 2 */
-    padding-left: 20px;
+    padding-left: 0px;
     /* 3 */
-    padding-right: 20px;
+    padding-right: 0px;
     /* 3 */
     width: 100%;
     /* 1 */
@@ -734,6 +768,16 @@
   }
   
   @media (max-width: 767px) {
+    .container{
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .sbi-small-text{
+      font-size: 12px;
+    }
+    .text-center-sm{
+      text-align: center;
+    }
     .sm-hidden {
       display: none;
     }
@@ -854,6 +898,15 @@
     }
     .reward-star img {
       margin: 0px;
+    }
+    h4.sbi-heading{
+      font-size: 14px;
+    }
+    h6.sbi-heading{
+      font-size: 12px;
+    }
+    .sbi-tiny-text{
+      font-size: 10px;
     }
   }
   
@@ -1047,8 +1100,20 @@
       margin-left: 91.666667%;
     }
   }
-  
+  @media (min-width:768px) and (max-width: 991px){
+    .container{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+  }
+  @media (min-width:992px) and (max-width: 1300px){
+    .container{
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  }
   @media (min-width: 768px) {
+    
     .col-md {
       flex-basis: 0;
       flex-grow: 1;
@@ -1253,13 +1318,14 @@
     box-shadow: none;
     border-radius: 34px;
     font: 600 14px "Open Sans", sans-serif;
-    width: 180px;
+    min-width: 180px;
     height: 38px;
     border: 1px solid transparent;
     margin-bottom: 20px;
     cursor: pointer;
     outline: none;
     transition: 0.3s;
+    padding: 0 20px;
   }
   .sbi-button.primary {
     color: #fff;
@@ -1289,10 +1355,23 @@
     color: #fff;
     cursor: not-allowed;
   }
+  .sbi-button.sbi-button-large{
+    height: 56px;
+    min-width: 280px;
+  }
   .sbi-button.noMargin {
     margin-bottom: 0px;
   }
-  
+  .sbi-button.has-icon{
+      align-items: center;
+      display: inline-flex;
+      justify-content: center;
+      line-height: 24px;
+  }
+  .sbi-button.has-icon img{
+    width: 24px;
+    margin-right: -24px;
+  }
   .sbi-button-group {
     display: flex;
     align-items: center;
@@ -1339,7 +1418,31 @@
   .space-top-10 {
     margin-top: 10px;
   }
+  /*  */
+  .mb-60{
+    margin-bottom: 60px;
+  }
+  .mb-40 {
+    margin-bottom: 40px;
+  }
   
+  .mb-30 {
+    margin-bottom: 30px;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  .mb-5{
+    margin-bottom: 5px;
+  }
+  .mb-none{
+    margin-bottom: 0;
+  }
   /* Inputs */
   .sbi-input-group {
     display: flex;
@@ -1677,6 +1780,10 @@
       border-radius: 50%;
       box-shadow: 0 0 5px 0 #d5d5ea; }
   @media (max-width: 767px) {
+    .sbi-button.sbi-button-large{
+      width: 100%;
+      max-width: 376px;
+    }
     .sbi-button-group.vertical-sm {
       flex-direction: column;
     }

@@ -16,14 +16,16 @@
     width: 100%;
 }
 .pp-terms-section{
-    overflow: hidden;
+    /* overflow-y: hidden; */
     position: relative;
 }
 .pp-terms-section p{
     line-height: 1.86;
 }
 .pp-terms-section ol{
-    padding-left: 15px;
+    padding-left: 1.2em;
+    box-sizing: border-box;
+    width: 100%;
     margin: 0;
 }
 .pp-terms-section ol li{
@@ -31,12 +33,20 @@
     line-height: 1.86;
 
 }
-.pp-terms-section::after{
+.pp-fader{
+    position: relative;
+}
+.pp-fader button{
+    z-index: 1;
+    position: relative;
+}
+.pp-fader::after{
     width: 100%;
     height: 100px;
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.27), #fff 31%);
     content: '';
     position: absolute;
-    bottom: -30px;
+    top: -60px;
     left: 0;
+    z-index: 0;
 }
