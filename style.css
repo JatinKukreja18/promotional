@@ -6,6 +6,9 @@
     height: auto;
     padding: 60px 0;
 }
+.pp-section.center .row{
+    align-items: center;
+}
 .pp-section.white{
     background-color: #fff;
 }
