@@ -1,11 +1,12 @@
 
 /* overriding theme styles of headings */
-.promotional-page h1{
+.promotional-page h1,
+.promotional-page h2{
     font-size: 20px;
 }
-.promotional-page h2{
+/* .promotional-page h2{
     font-size: 18px;
-}
+} */
 .promotional-page h3{
     font-size: 16px;
 }
