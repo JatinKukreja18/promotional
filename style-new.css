@@ -1,4 +1,17 @@
 
+/* overriding theme styles of headings */
+.promotional-page h1{
+    font-size: 20px;
+}
+.promotional-page h2{
+    font-size: 18px;
+}
+.promotional-page h3{
+    font-size: 16px;
+}
+.promotional-page h4{
+    font-size: 14px;
+}
 .pp-section{
     background-color: #f2f7fd;
     min-height: 450px;
