@@ -1,4 +1,12 @@
 
+.pp-header{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pp-header img{
+    height: 40px;
+}
 /* overriding theme styles of headings */
 .promotional-page h1,
 .promotional-page h2{
@@ -51,7 +59,7 @@
 .pp-fader{
     position: relative;
 }
-.pp-fader button{
+.pp-fader .sbi-button{
     z-index: 1;
     position: relative;
 }
@@ -64,4 +72,9 @@
     top: -60px;
     left: 0;
     z-index: 0;
+}
+a.sbi-button{
+    display:inline-flex;align-items: center;justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
 }
