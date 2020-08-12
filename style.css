@@ -44,7 +44,7 @@
 .pp-fader{
     position: relative;
 }
-.pp-fader button{
+.pp-fader .sbi-button{
     z-index: 1;
     position: relative;
 }
